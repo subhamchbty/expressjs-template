@@ -19,7 +19,8 @@ const signup = async (req: Request, res: Response) => {
     try {
         let user = await User.findOne({
             email,
-        })
+        }).select('+password')
+
         if (user) {
             return res.status(400).json({
                 msg: 'User Already Exists',

@@ -20,13 +20,13 @@ To use this template, click on the **Use this template** button on the repositor
 1. Clone the repository:
 
 ```shell
-git clone https://github.com/<username>/<repository-name>.git
+git clone https://github.com/suhamchbty/expressjs-template.git
 ```
 
 2. Install dependencies:
 
 ```shell
-cd <repository-name>
+cd expressjs-template
 npm install
 ```
 

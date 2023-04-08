@@ -1,5 +1,6 @@
 import express from 'express'
 import cors from 'cors'
+import 'dotenv/config'
 
 import routes from './routes'
 import InitiateMongoServer from './config/db'
@@ -7,9 +8,6 @@ import InitiateMongoServer from './config/db'
 const app = express()
 
 InitiateMongoServer()
-
-const dotenv = require('dotenv')
-dotenv.config()
 
 const port = process.env.APP_PORT || 8000
 const host = process.env.APP_HOST || 'localhost'

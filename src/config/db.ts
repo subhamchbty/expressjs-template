@@ -1,7 +1,5 @@
 import mongoose, { ConnectOptions } from 'mongoose'
-import dotenv from 'dotenv'
-
-dotenv.config()
+import 'dotenv/config'
 
 const { DB_USER, DB_PASSWORD, DB_CLUSTER } = process.env
 

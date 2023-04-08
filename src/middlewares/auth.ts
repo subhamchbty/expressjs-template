@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express'
 import jwt, { JwtPayload } from 'jsonwebtoken'
-import dotenv from 'dotenv'
+import 'dotenv/config'
 
 export interface AuthenticatedRequest extends Request {
     user?: {
@@ -13,8 +13,6 @@ export interface DecodedToken extends JwtPayload {
         id: string
     }
 }
-
-dotenv.config()
 
 // Middleware function that extracts a JWT token from the Authorization header and verifies it
 export default (

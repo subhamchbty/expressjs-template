@@ -9,7 +9,7 @@
     "build": "rimraf ./build && tsc",
     "start": "npm run build && node build/index.js"
   },
-  "keywords": [],
+  "keywords": ["nextjs", "typescript", "express", "mongodb", "template"],
   "author": "",
   "license": "ISC",
   "dependencies": {

@@ -1,4 +1,4 @@
-# Node.js Express Mongo TypeScript Template
+# Node.js Express.js MongoDB TypeScript Template
 
 This is a starter template for creating a Node.js web application using the Express.js framework, MongoDB as the database, and TypeScript for type checking.
 

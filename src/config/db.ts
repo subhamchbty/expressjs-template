@@ -3,7 +3,9 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const uri = process.env.MONGODB as string;
+const { DB_USER, DB_PASSWORD, DB_CLUSTER } = process.env;
+
+const uri = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_CLUSTER}.3oygnoj.mongodb.net/?retryWrites=true&w=majority`;
 
 const InitiateMongoServer = async () => {
   try {

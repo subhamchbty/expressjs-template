@@ -11,8 +11,8 @@ InitiateMongoServer();
 const dotenv = require("dotenv");
 dotenv.config();
 
-const port = process.env.PORT || 8000;
-const host = process.env.HOST || "localhost";
+const port = process.env.APP_PORT || 8000;
+const host = process.env.APP_HOST || "localhost";
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
